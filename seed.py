@@ -9,6 +9,7 @@ with app.app_context():
     db.session.commit()
     Expense.query.delete()
     Category.query.delete()
+    db.session.commit()
     
 
     print("Creating data..")
