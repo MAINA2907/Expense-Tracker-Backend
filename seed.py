@@ -6,7 +6,7 @@ with app.app_context():
     print ('Deleting data...')
     
     # db.session.query(expenses_categories).delete()
-    # db.session.commit()
+    db.session.commit()
     Expense.query.delete()
     Category.query.delete()
     
